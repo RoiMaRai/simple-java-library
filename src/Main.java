@@ -66,10 +66,6 @@ public class Main {
                     System.out.println("BOOK FOUND");
                     book.printBookInfo();
                 }
-                else
-                {
-                    System.out.println("No book found from ID: "+bookID);
-                }
             } else if (cmd == 5) { // printAllBookInLibrary
                 libraryHandler.printAllBookInLibrary();
             }
