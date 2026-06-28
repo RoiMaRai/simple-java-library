@@ -46,15 +46,7 @@ public class Main {
                 if (bookTitle.equals("CANCEL")){
                     continue;
                 }
-                Book book = libraryHandler.searchBookFromTitle(bookTitle);
-                if (book != null){
-                    System.out.println("BOOK FOUND");
-                    book.printBookInfo();
-                }
-                else
-                {
-                    System.out.println("No book found from title: "+bookTitle);
-                }
+                libraryHandler.searchBookFromTitle(bookTitle);
             } else if (cmd == 4) { // searchBookFromID
                 System.out.println("Enter book ID or 'CANCEL' to cancel operation.");
                 String bookID = scanner.nextLine();

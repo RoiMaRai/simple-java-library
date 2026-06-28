@@ -15,8 +15,8 @@ public class LibraryHandler {
         if (bookID == null) return;
         libraryBookData.removeIf(book -> book.getBookID().equals(bookID));
     }
-    public Book searchBookFromTitle(String title){
-        if (title == null) return null;
+    public void searchBookFromTitle(String title){
+        if (title == null) return;
 
         int numOfBookFound = 0;
         for (Book book : libraryBookData){
@@ -26,7 +26,7 @@ public class LibraryHandler {
             }
         }
         System.out.println(numOfBookFound+" book(s) found from title: "+title);
-        return null;
+        return;
     }
     public Book searchBookFromBookID(String bookID){
         if (bookID == null) return null;
